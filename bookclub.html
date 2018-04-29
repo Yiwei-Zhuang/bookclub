@@ -1,0 +1,99 @@
+<!doctype HTML>
+
+<HTML>
+
+<head>
+	<title> bookclub </title>
+	<link rel="stylesheet" type="text/css" href="bookclub.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+</head>
+
+<body id = "body">
+	
+	<header id = "header">
+		<div id = "bookclub">BOOK CLUB </div>
+			<div id = "search_sentence"> Search for a book by...</div>
+			<div id = "searchGuide">
+				<div class = "A">
+					<div id = "author"> Author </div>
+					<input id = "byAuthor" type="text" placeholder="  ex William Shakespeare">
+				</div>
+				<div id = "OR1"> or </div>
+				<div class = "T">
+					<div id = "title"> Title </div>
+					<input id = "byTitle" type="text" placeholder="  ex Romeo and Juliet">
+				</div>
+				<div id = "OR2"> or </div>
+				<div class = "I">
+					<div id = "isbn"> ISBN </div>
+					<input id = "byISBN" type="text" placeholder="  ex 000-0-00-000000-0">
+				</div>
+			</div>
+			<div id = "buttonHolder">
+				<button type = "button" id="searchButton" onclick="doSearch();"> Search </button>
+			</div>	
+	</header>
+
+	<div id = "anotherHeader">
+		<div id = "anotherBookclub">BOOK CLUB </div>
+			<div id = "changeSearchGuide">
+				<div class = "A">
+					<div id = "changeAuthor"> Author </div>
+					<input id = "byAuthor2" type="text" placeholder="  ex William Shakespeare">
+				</div>
+				<div class = "T">
+					<div id = "changeTitle"> Title </div>
+					<input id = "byTitle2" type="text" placeholder="  ex Romeo and Juliet">
+				</div>
+				<div class = "I">
+					<div id = "changeISBN"> ISBN </div>
+					<input id = "byISBN2" type="text" placeholder="  ex 000-0-00-000000-0">
+				</div>
+			</div>
+			<div id = "changeButtonHolder">
+				<button type = "button" id="changeSearchButton" onclick="AnotherdoSearch();"> Search </button>
+			</div>	
+	</div>
+	
+	<div class = "overlayBase" id = "overlay">
+			<div id = "leftarrow"> 
+				<button type = "button" id="leftArrow"> &#x2190;</button>
+			</div>
+			<div class = "overlayInner" id = "overlayInner"> 
+				<div id = "cover"> </div>
+				<div id = "bookDisplay"> </div>
+			</div>
+			<div id = "rightarrow"> 
+				<button type = "button" id="rightArrow"> &#x2192;</button>
+			</div>
+			<button type = "button" id="keep" onclick="keep();"> Keep </button>
+			<button type = "button" id="quit" onclick="quit();"> X </button>
+	</div>
+
+	<div class = "notFound" id = "notFound">
+		<div id = "innerNotFound"> 
+			<div id = "notFoundText1">  </div>
+			<div id = "notFoundText2">  </div>
+			<div id = "notFoundText3">  </div>
+			<div id = "notFoundText4">  </div>
+			<button type = "button" id = "OK" onclick="quit();"> OK </button>
+		</div>
+	</div>
+
+	<div id = "severalBooks"> </div>
+	
+</body>
+
+
+<script src="bookclub.js"> </script>
+<script id="dummy"> </script>
+
+</HTML>
+
+
+
+
+
+
+
